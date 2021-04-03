@@ -1,9 +1,7 @@
-package pl.mszczekocka;
-
+package pl.martynaszczekocka;
 import org.junit.Test;
-import pl.mszczekocka.BitCounting;
+import pl.martynaszczekocka.BitCounting;
 
-import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
 public class BitCountingTest {

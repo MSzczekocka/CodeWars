@@ -1,4 +1,4 @@
-package pl.mszczekocka;
+package pl.martynaszczekocka;
 
 
 import org.junit.After;

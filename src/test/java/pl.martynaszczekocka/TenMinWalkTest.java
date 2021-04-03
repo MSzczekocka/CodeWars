@@ -1,9 +1,8 @@
-package pl.mszczekocka;
+package pl.martynaszczekocka;
 
 import org.junit.Test;
-import pl.mszczekocka.TenMinWalk;
+import pl.martynaszczekocka.TenMinWalk;
 
-import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
 public class TenMinWalkTest {

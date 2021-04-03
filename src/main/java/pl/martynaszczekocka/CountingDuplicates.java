@@ -1,6 +1,4 @@
-package pl.mszczekocka;
-
-import java.util.Locale;
+package pl.martynaszczekocka;
 
 public class CountingDuplicates {
     public static int duplicateCount(String text) {

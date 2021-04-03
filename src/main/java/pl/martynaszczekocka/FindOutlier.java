@@ -1,4 +1,4 @@
-package pl.mszczekocka;
+package pl.martynaszczekocka;
 
 public class FindOutlier {
     static int find(int[] integers){

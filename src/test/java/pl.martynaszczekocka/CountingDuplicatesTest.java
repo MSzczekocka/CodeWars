@@ -1,9 +1,8 @@
-package pl.mszczekocka;
+package pl.martynaszczekocka;
 
 import org.junit.Test;
-import pl.mszczekocka.CountingDuplicates;
+import pl.martynaszczekocka.CountingDuplicates;
 
-import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
 public class CountingDuplicatesTest {

@@ -1,4 +1,4 @@
-package pl.mszczekocka;
+package pl.martynaszczekocka;
 
 public class BitCounting {
     public static int countBits(int n){
