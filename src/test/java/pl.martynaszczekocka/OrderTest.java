@@ -1,11 +1,8 @@
-package pl.mszczekocka;
+package pl.martynaszczekocka;
 
 import org.junit.Test;
-import pl.mszczekocka.Order;
 
-import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.*;
 import static org.junit.Assert.assertThat;
 
 public class OrderTest {
