@@ -1,11 +1,12 @@
 package pl.mszczekocka;
 
 import org.junit.Test;
+import pl.mszczekocka.Order;
 
-import static org.junit.Assert.*;
-import static org.junit.Assert.*;
-import org.junit.Test;
 import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class OrderTest {
     @Test

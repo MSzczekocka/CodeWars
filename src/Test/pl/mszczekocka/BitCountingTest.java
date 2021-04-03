@@ -1,8 +1,10 @@
 package pl.mszczekocka;
 
 import org.junit.Test;
+import pl.mszczekocka.BitCounting;
 
 import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class BitCountingTest {
     @Test
