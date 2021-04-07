@@ -57,7 +57,6 @@ public class DirReduction {
                 temp ++;
             }
         }
-
         return result;
     }
 }
