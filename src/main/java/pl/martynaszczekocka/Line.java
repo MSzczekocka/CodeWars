@@ -23,10 +23,9 @@ public class Line {
                     } else {
                         return "NO";
                     }
-                }else{
+                }
                     oddMoney50 =oddMoney50-1;
                     oddMoney25 =oddMoney25-1;
-                }
             }
         }
     return "YES";

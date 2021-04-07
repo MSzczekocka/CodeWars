@@ -18,4 +18,9 @@ public class LineTest {
         assertEquals("NO", Line.Tickets(new int []{25, 50, 25, 100, 50, 100}));
     }
 
+    @Test
+    public void test4() {
+        assertEquals("YES", Line.Tickets(new int []{}));
+    }
+
 }
