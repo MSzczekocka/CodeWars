@@ -1,7 +1,6 @@
 package pl.martynaszczekocka;
 
 import org.junit.Test;
-import pl.martynaszczekocka.TenMinWalk;
 
 import static org.junit.Assert.assertEquals;
 
