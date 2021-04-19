@@ -10,6 +10,8 @@ public class WeightSortTest {
         System.out.println("****** Basic Tests ******");
         assertEquals("2000 103 123 4444 99", WeightSort.orderWeight("103 123 4444 99 2000"));
     }
+
+
     @Test
     public void BasicTests2() {
         System.out.println("****** Basic Tests ******");
