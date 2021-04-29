@@ -14,6 +14,7 @@ public class Line2 {
             people.add(people.get(i));
             people.add(people.get(i));
         }
+
         return people.get(n-1);
     }
 }

@@ -2,30 +2,12 @@ package pl.martynaszczekocka;
 
 public class Greed {
     public static int greedy(int[] dice){
+        int[] no = new int[6];
         int no1=0, no2=0, no3=0,no4=0,no5=0,no6=0;
         int result =0;
 
         for (int i=0; i< dice.length; i++){
-            switch (dice[i]) {
-                case 1:
-                    no1++;
-                    break;
-                case 2:
-                    no2++;
-                    break;
-                case 3:
-                    no3++;
-                    break;
-                case 4:
-                    no4++;
-                    break;
-                case 5:
-                    no5++;
-                    break;
-                case 6:
-                    no6++;
-                    break;
-            }
+            no[dice[i-1]]+= 1;
         }
 
         while (no1>2){
