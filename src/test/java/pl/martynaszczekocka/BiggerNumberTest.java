@@ -34,4 +34,9 @@ public class BiggerNumberTest {
         assertEquals(19009, BiggerNumber.nextBiggerNumber(10990));
     }
 
+    @Test
+    public void basicTests7() {
+        assertEquals(123456798, BiggerNumber.nextBiggerNumber(123456789));
+    }
+
 }

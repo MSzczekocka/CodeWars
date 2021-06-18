@@ -3,21 +3,23 @@ package pl.martynaszczekocka;
 public class BiggerNumber {
 
     public static long nextBiggerNumber(long n){
+        // zrobić na liśt?
         String number = Long.toString(n);
+        char temp = 'x';
         long tempNum = n*10;
         long newNumL = 0L;
         String newNumS = "";
 
         for (int i=0; i< number.length();i++){
-            char digit = number.charAt(i);
-            String tempN = number.substring(0,i) +number.substring(i+1);
             for(int j=0; j<number.length(); j++){
-                newNumS = tempN.substring(0,j) + digit + tempN.substring(j+1);
+                char[] digits = number.toCharArray();
+                temp = digits[i];
+                digits[i] = digits[j];
+                digits[j] = temp;
+                newNumS = String.valueOf(digits);
                 newNumL = Long.parseLong(newNumS);
 
-                if (newNumL==n+1){
-                    return n+1;
-                } else if (newNumL>n && tempNum>newNumL){
+                if (newNumL>n && tempNum>newNumL){
                     tempNum = newNumL;
                 }
 
@@ -29,6 +31,5 @@ public class BiggerNumber {
 
         return tempNum;
     }
-
 
 }
