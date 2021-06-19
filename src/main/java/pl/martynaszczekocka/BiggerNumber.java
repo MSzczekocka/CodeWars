@@ -1,35 +1,29 @@
 package pl.martynaszczekocka;
 
+import java.util.Arrays;
+
 public class BiggerNumber {
 
     public static long nextBiggerNumber(long n){
-        // zrobić na liśt?
-        String number = Long.toString(n);
-        char temp = 'x';
-        long tempNum = n*10;
-        long newNumL = 0L;
-        String newNumS = "";
+        long result = -1L;
+        char[] digitsN = String.valueOf(n).toCharArray();
+        Arrays.sort(digitsN);
+        String digitsS = String.valueOf(digitsN);
 
-        for (int i=0; i< number.length();i++){
-            for(int j=0; j<number.length(); j++){
-                char[] digits = number.toCharArray();
-                temp = digits[i];
-                digits[i] = digits[j];
-                digits[j] = temp;
-                newNumS = String.valueOf(digits);
-                newNumL = Long.parseLong(newNumS);
+        for (long i = n+1; i <n*10; i++){
+            char[] digitsN2 = String.valueOf(i).toCharArray();
+            Arrays.sort(digitsN2);
+            String digitsS2 = String.valueOf(digitsN2);
 
-                if (newNumL>n && tempNum>newNumL){
-                    tempNum = newNumL;
-                }
-
+            if (digitsS.equals(digitsS2)){
+                return i;
             }
+
         }
 
-        if (tempNum == n*10)
-            return -1;
-
-        return tempNum;
+        return result;
     }
 
 }
+
+
