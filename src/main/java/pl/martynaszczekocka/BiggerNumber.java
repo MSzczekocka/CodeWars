@@ -5,35 +5,46 @@ import java.util.Arrays;
 public class BiggerNumber {
 
     public static long nextBiggerNumber(long n){
+        char arr[] = String.valueOf(n).toCharArray();
+        int x = arr.length;
+        int data[]=new int[arr.length];
 
 
-
-        return -1;
-    }
-
-    static void combination(int arr[], int data[], int start, int end, int index, int r){
-
-        if (index == r) {
-            for (int j=0; j<r; j++)
-                System.out.print(data[j]+" ");
-            System.out.println("");
-            return;
+        if (combination(arr, data, 0, x-1, 0,n)==10*n){
+            return -1;
+        }else{
+            return combination(arr, data, 0, x-1, 0,n);
         }
 
-        for (int i=start; i<=end && end-i+1 >= r-index; i++){
+    }
+
+    static long combination(char arr[], int data[], int start, int end, int index, long n){
+        long tempMax = 10*n;
+        long temp = 0L;
+
+        if (index == arr.length) {
+            temp = Long.getLong(String.valueOf(arr));
+            if(temp<tempMax && temp>n){
+                tempMax = temp;
+            }
+        }
+
+        for (int i=start; i<=end && end-i+1 >= arr.length-index; i++){
             data[index] = arr[i];
-            combination(arr, data, i+1, end, index+1, r);
+            combination(arr, data, i+1, end, index+1,n);
         }
+
+        return tempMax;
     }
 
-    static void numCombination() {
-        int arr[] = {1, 2, 3, 4, 5};
-        int r = 3;
-        int n = arr.length;
-        int data[]=new int[r];
-
-        combination(arr, data, 0, n-1, 0, r);
-    }
+//    static void numCombination() {
+//        char arr[] = String.valueOf(n).toCharArray();
+//        int r = arr.length;
+//        int n = arr.length;
+//        int data[]=new int[r];
+//
+//        combination(arr, data, 0, n-1, 0, r);
+//    }
 
 
 }
