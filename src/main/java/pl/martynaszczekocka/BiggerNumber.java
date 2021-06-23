@@ -7,7 +7,7 @@ public class BiggerNumber {
     public static long nextBiggerNumber(long n){
         char arr[] = String.valueOf(n).toCharArray();
         int x = arr.length;
-        int data[]=new int[arr.length];
+        char data[]=new char[arr.length];
 
 
         if (combination(arr, data, 0, x-1, 0,n)==10*n){
@@ -18,7 +18,7 @@ public class BiggerNumber {
 
     }
 
-    static long combination(char arr[], int data[], int start, int end, int index, long n){
+    static long combination(char arr[], char data[], int start, int end, int index, long n){
         long tempMax = 10*n;
         long temp = 0L;
 
