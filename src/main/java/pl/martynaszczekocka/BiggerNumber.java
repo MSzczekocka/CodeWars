@@ -1,7 +1,5 @@
 package pl.martynaszczekocka;
 
-import java.util.Arrays;
-
 public class BiggerNumber {
 
     public static long nextBiggerNumber(long n){
@@ -23,7 +21,7 @@ public class BiggerNumber {
         long temp = 0L;
 
         if (index == arr.length) {
-            temp = Long.getLong(String.valueOf(arr));
+            temp = Long.getLong(String.valueOf(data));
             if(temp<tempMax && temp>n){
                 tempMax = temp;
             }
@@ -31,7 +29,7 @@ public class BiggerNumber {
 
         for (int i=start; i<=end && end-i+1 >= arr.length-index; i++){
             data[index] = arr[i];
-            combination(arr, data, i+1, end, index+1,n);
+            combination(arr, data, i+1, end, index+1, n);
         }
 
         return tempMax;
