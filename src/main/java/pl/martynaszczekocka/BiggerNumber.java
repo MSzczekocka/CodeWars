@@ -43,30 +43,14 @@ public class BiggerNumber {
         return results;
     }
 
-//    static void numCombination() {
-//        char arr[] = String.valueOf(n).toCharArray();
-//        int r = arr.length;
-//        int n = arr.length;
-//        int data[]=new int[r];
-//
-//        combination(arr, data, 0, n-1, 0, r);
-//    }
+    static void numCombination() {
+        char arr[] = String.valueOf(n).toCharArray();
+        int r = arr.length;
+        int n = arr.length;
+        int data[]=new int[r];
+
+        combination(arr, data[], 0, n-1, 0, r);
+    }
 
 
 }
-
-//    long result = -1L;
-//    char[] digitsN = String.valueOf(n).toCharArray();
-//        Arrays.sort(digitsN);
-//                String digitsS = String.valueOf(digitsN);
-//
-//                for (long i = n+1; i <n*10; i++){
-//        char[] digitsN2 = String.valueOf(i).toCharArray();
-//        Arrays.sort(digitsN2);
-//        String digitsS2 = String.valueOf(digitsN2);
-//
-//        if (digitsS.equals(digitsS2)){
-//        return i;
-//        }
-//
-//        }
