@@ -29,7 +29,7 @@ public class BiggerNumber {
 
         List<int[]> combinations = generate(N, R);
         for (int[] combination : combinations) {
-            System.out.println(Arrays.toString(combination));fd
+            System.out.println(Arrays.toString(combination));
         }
 
         System.out.printf("generated %d combinations of %d items from %d ", combinations.size(), R, N);
