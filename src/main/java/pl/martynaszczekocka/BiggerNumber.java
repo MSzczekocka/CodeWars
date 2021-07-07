@@ -6,10 +6,9 @@ import java.util.Collections;
 import java.util.List;
 
 public class BiggerNumber {
+    public static long nextBiggerNumber(long n){
 
-    static void combinationUtil(int arr[], int data[], int start,
-                                int end, int index, int r)
-    {
+    static void combinationUtil(int arr[], int data[], int start, int end, int index, int r){
         if (index == r)
         {
             for (int j=0; j<r; j++)
